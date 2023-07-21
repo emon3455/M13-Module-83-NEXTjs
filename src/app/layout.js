@@ -8,28 +8,15 @@ export const metadata = {
   description: 'First NextJS APP',
 }
 
-export default function RootLayout({ children }) {
+const  RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>
 
-        <header>
-          <nav>
-            <a href="/">Home </a>
-            <a href="/about"> About </a>
-            <a href="/dashboard"> Dashboard </a>
-            <a href="/dashboard/addItem"> Add-Item </a>
-            <a href="/dashboard/manageItem"> Manage-Item </a>
-          </nav>
-        </header>
-
         {children}
 
-        <footer>
-          This website is developed by Emon
-        </footer>
-        
       </body>
     </html>
   )
 }
+export default RootLayout;
