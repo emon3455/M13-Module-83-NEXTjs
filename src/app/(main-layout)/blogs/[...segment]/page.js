@@ -1,9 +1,15 @@
+import { useParams } from 'next/navigation';
 import React from 'react';
 
-const SingleBlog = () => {
+const SingleBlog = ({params}) => {
+
+    const [year,id] = params.segment || [];
+
     return (
         <div>
-            Single Blogs page
+            <p>
+                The blog: {id && id} is published on {year && year}
+            </p>
         </div>
     );
 };

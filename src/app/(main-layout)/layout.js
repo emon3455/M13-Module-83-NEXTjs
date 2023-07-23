@@ -9,7 +9,7 @@ const layout = ({ children }) => {
 
             {children}
 
-            <footer>
+            <footer className='text-center'>
                 This website is developed by Emon
             </footer>
 
