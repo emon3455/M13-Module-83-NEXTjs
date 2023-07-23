@@ -1,3 +1,6 @@
+// "use client"
+// import { useRouter } from 'next/navigation';
+
 import Link from 'next/link';
 import React from 'react';
 
@@ -29,18 +32,30 @@ const blogs=[
 ]
 
 const BlogsPage = () => {
+
+    // const router  = useRouter();
+
     return (
         <div className='container mx-auto'>
             <h2 className='text-4xl text-center font-bold my-10'>Blogs page</h2>
             <div className="">
                 {
-                    blogs.map(({id,year,title})=><Link className='block border border-red-400 mb-2' href={{ 
-                        pathname: `/blogs/${year}/${id}`,
-                        query: {
-                            title: title
+                    blogs.map(({id,year,title})=><Link className='block border border-red-400 mb-2' 
+                    href={
+                        {
+                            pathname: `/blogs/${year}/${id}`,
+                            query:{
+                                title: title
+                            }
                         }
-                    }}
-                    key={id}>{title}</Link>)
+                    }
+
+                    /*onClick={()=> router.push(`/blogs/${year}/${id}?title=${title}`)}*/
+                    key={id}
+                    >
+
+                        {title}
+                    </Link>)
                 }
             </div>
         </div>
