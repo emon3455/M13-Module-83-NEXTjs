@@ -12,7 +12,7 @@ const Category = async () => {
                 categories.map(category=><div className='text-lg p-2 border-2 border-blue-400 rounded-lg' key={category.id}
                 >
                     <h4>Category: {category.name}</h4>
-                    <Link href="" className='mt-3 block'>
+                    <Link href={`/products?categoryId=${category.id}`} className='mt-3 block'>
                         <button className='bg-red-400 p-1 text-white rounded-lg'>Details</button>
                     </Link>
                 </div>)
