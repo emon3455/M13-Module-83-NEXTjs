@@ -1,3 +1,4 @@
+import getAllProducts from '@/utils/getAllProducts';
 import React from 'react';
 
 export const metadata = {
@@ -6,6 +7,8 @@ export const metadata = {
 }
 
 const AboutPage = () => {
+
+
     return (
         <div>
             this is about page

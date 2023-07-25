@@ -25,7 +25,7 @@ const navigationLink = [
 const Navbar = () => {
     return (
         <nav className='flex justify-center flex-col md:flex-row md:justify-between  container mx-auto'>
-            <h1 className='md:w-2/4 text-center md:text-left text-2xl font-bold text-red-400'>Web Hero</h1>
+            <h1 className='md:w-2/4 text-center md:text-left text-2xl font-bold text-red-500'>Next Hero</h1>
 
             <ul className='flex md:w-2/4 justify-around font-semibold'>
                 {

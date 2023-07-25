@@ -1,0 +1,72 @@
+[
+    {
+      "id": "1",
+      "name": "Product One",
+      "description": "This is the first product description.",
+      "price": "$29.99",
+      "images": [
+        "product1-image1.jpg",
+        "product1-image2.jpg",
+        "product1-image3.jpg"
+      ],
+      "category":  ["Men", "Women"],
+      "colors": ["Black", "White"],
+      "sizes": ["Small", "Medium", "Large"]
+    },
+    {
+      "id": "2",
+      "name": "Product Two",
+      "description": "This is the second product description.",
+      "price": "$39.99",
+      "images": [
+        "product2-image1.jpg",
+        "product2-image2.jpg",
+        "product2-image3.jpg"
+      ],
+      "category":  ["Women"],
+      "colors": ["Pink", "Yellow"],
+      "sizes": ["Small", "Medium"]
+    },
+    {
+      "id": "3",
+      "name": "Product Three",
+      "description": "This is the third product description.",
+      "price": "$24.99",
+      "images": [
+        "product3-image1.jpg",
+        "product3-image2.jpg",
+        "product3-image3.jpg"
+      ],
+      "category":  ["Men"],
+      "colors": ["Blue", "Gray"],
+      "sizes": ["Large", "X-Large"]
+    },
+    {
+      "id": "4",
+      "name": "Product Four",
+      "description": "This is the fourth product description.",
+      "price": "$49.99",
+      "images": [
+        "product4-image1.jpg",
+        "product4-image2.jpg",
+        "product4-image3.jpg"
+      ],
+      "category":  ["Men", "Women"],
+      "colors": ["Red", "Green", "Blue"],
+      "sizes": ["Small", "Medium", "Large", "X-Large"]
+    },
+    {
+      "id": "5",
+      "name": "Product Five",
+      "description": "This is the fifth product description.",
+      "price": "$19.99",
+      "images": [
+        "product5-image1.jpg",
+        "product5-image2.jpg",
+        "product5-image3.jpg"
+      ],
+      "category":  ["Baby"],
+      "colors": ["Purple", "Yellow"],
+      "sizes": ["Newborn", "Infant"]
+    }
+]
