@@ -2,7 +2,10 @@ import Image from 'next/image'
 import bnr1 from "@/assets/bnr3.jpg"
 import Category from '@/components/homePage/Category'
 
+export const revalidate = 5;
+
 export default function HomePage() {
+
   return (
     <main className="container mx-auto">
 
