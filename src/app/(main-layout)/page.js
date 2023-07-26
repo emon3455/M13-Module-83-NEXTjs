@@ -16,20 +16,21 @@ export default function HomePage() {
 
       <section className='my-5'>
         <h2 className='text-2xl font-bold text-violet-500'>Our All Categorys:</h2>
-        <Category></Category>  
+        <Category></Category>
       </section>
 
       <section className='my-5'>
         <h2 className='text-2xl font-bold text-violet-500'>Our All Popular Products:</h2>
 
-        <Suspense fallback={<LoadingCompo/>}>
+        <Suspense fallback={<LoadingCompo />}>
 
           <PopularProduct></PopularProduct>
-          
+
         </Suspense>
 
       </section>
-      
+
+
     </main>
   )
 }
