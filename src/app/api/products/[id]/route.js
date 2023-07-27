@@ -20,4 +20,25 @@ export const GET =(request, {params})=>{
    
 }
 
+export const PATCH = async(request, {params})=>{
+    const body = await request.json();
+    const index = db.products.findIndex(product=> product.id ===  +params.id);
+    db.products[index] = {...db.products[index], ...body};
+
+    return NextResponse.json({
+        message: "Product Updated Successfully"
+    })
+
+}
+
+export const DELETE = async (request, {params}) =>{
+
+    db.product = db.products.filter(product=> product.id ===!  +params.id);
+
+    return NextResponse.json({
+        message: "Product Deleted Successfully"
+    })
+    
+}
+
 
